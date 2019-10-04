@@ -52,7 +52,7 @@ class AddNewTodo extends Component {
           <div className='row'>
             <label>How much of a priority is this?</label>
           </div>
-          <div className='select-row'>
+          <div className='add-priority-select-row'>
             <select type='dropdown' required>
               <option value=''>Select a Priority</option> 
               <option value='3'>High</option> 
@@ -129,19 +129,20 @@ class EditTodo extends Component {
           <div className='row'>
             <textarea className='new-todo-text'></textarea>
           </div>
-          {/* <div className='card-body'>
-            <div className='row'>
-              <label>Priority?</label>
-            </div>
-            <div className='select-row'>
-              <select type='dropdown' required>
-                <option value=''>Select a Priority</option> 
-                <option value='3'>High</option> 
-                <option value='2'>Medium</option> 
-                <option value='1'>Low</option> 
-              </select>
-            </div>
-          </div> */}
+          <div className='row'>
+            <label>Priority?</label>
+          </div>
+          <div className='edit-priority-select-row'>
+            <select type='dropdown' required>
+              <option value=''>Select a Priority</option> 
+              <option value='3'>High</option> 
+              <option value='2'>Medium</option> 
+              <option value='1'>Low</option> 
+            </select>
+          </div>
+          <div className='row save-button-row'>
+            <button className='save-update-button'>Save</button>
+          </div>
         </td>
       </tr>
 

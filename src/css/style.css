@@ -148,7 +148,7 @@ body {
 @media (min-width:480px) { 
     .add-new-todo {
         grid-column: 1 / 2;
-        min-height: 60%;
+        max-height: 85%;
     }
 }
 
@@ -279,19 +279,31 @@ body {
     }
 }
 
-/* select-row */
+/* add priority select row */
 @media (min-width:480px) { 
-    .select-row {
+    .add-priority-select-row {
         clear: both;
         margin: 10px 0px 35px 0px;
     }
 }
 
 @media (max-width:480px) { 
-    .select-row {
+    .add-priority-select-row {
         clear: both;
         margin: 10px 0px 35px 0px;
     }
+}
+
+/* add button */
+.add-button {
+    font-size: 1.5em;
+    font-weight: 550;
+    color: white;
+    background-color: #5cb852;
+    width: 88%;
+    height: 72%;
+    border-radius: 8px;
+    border: none;
 }
 
 /* table */
@@ -312,13 +324,10 @@ table
 .todo-item-row td:nth-child(4) {
   width: 6%;
 }
+
 .todo-item-row td:nth-child(2) {
   width: 82%;
 } 
-
-/* .edit-todo-row td:nth-child(1) {
-    width: 100%;
-} */
 
 /* todo table tr/td children for bottom border radius*/
 .todo-table tr:last-child td:first-child {
@@ -349,24 +358,6 @@ table
     }
 }
 
-/* input type text */
-/* input[type=checkbox] {
-    width: 100%;
-} */
-
-/* table checkbox */
-/* @media (min-width:480px) { 
-    .table-checkbox {
-        width: 45px;
-    }
-}
-
-@media (max-width:480px) { 
-    .table-checkbox {
-        width: 3em;
-    }
-} */
-
 /* todo description */
 @media (min-width:480px) { 
     .todo-description {
@@ -388,45 +379,7 @@ table
     }
 }
 
-/* edit todo icon */
-/* @media (min-width:480px) { 
-    .edit-todo-icon {
-        width: 2em;
-    }
-}
-
-@media (max-width:480px) { 
-    .edit-todo-icon {
-        width: 1.7em;
-    }
-} */
-
-/* delete-todo */
-/* @media (min-width:480px) { 
-    .delete-todo {
-        width: 2em;
-    }
-}
-
-@media (max-width:480px) { 
-    .delete-todo {
-        width: 1.7em;
-    }
-} */
-
-/* edit todo row */
-/* @media (min-width:480px) { 
-    .edit-todo-row {
-        border-bottom: 5px solid rgb(218, 218, 218);
-    }
-}
-
-@media (max-width:480px) { 
-    .edit-todo-row {
-        border-bottom: 0.5px solid rgb(218, 218, 218);
-    }
-} */
-
+/* edit table */
 .edit-table {
     /* background-color: #FBF8E2; */
     border-bottom: 0.5px solid rgb(218, 218, 218);
@@ -436,28 +389,73 @@ table
 @media (min-width:480px) { 
     .edit-todo-data {
         background-color: #FBF8E2;
-        /* border-bottom: 0.5px solid rgb(218, 218, 218); */
+        border-radius: 0px 0px 5px 5px;
     }
 }
 
 @media (max-width:480px) { 
     .edit-todo-data {
         background-color: #FBF8E2;
-        /* border-bottom: 0.5px solid rgb(218, 218, 218); */
+        border-radius: 0px 0px 5px 5px;
     }
 }
 
+/* edit priority select row */
+@media (min-width:480px) { 
+    .edit-priority-select-row {
+        clear: both;
+        margin: 10px 0px 15px 0px;
+    }
+}
 
-/* add button */
-.add-button {
-    font-size: 1.5em;
-    font-weight: 550;
-    color: white;
-    background-color: #5cb852;
-    width: 88%;
-    height: 72%;
-    border-radius: 8px;
-    border: none;
+@media (max-width:480px) { 
+    .edit-priority-select-row {
+        clear: both;
+        margin: 10px 0px 15px 0px;
+    }
+}
+
+/* save button row */
+@media (min-width:480px) { 
+    .save-button-row {
+        clear: both;
+        margin: 15px 15px 10px 0px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:480px) { 
+    .save-button-row {
+        clear: both;
+        margin: 15px 15px 10px 0px;
+        overflow: hidden;
+    }
+}
+
+/* save update button */
+@media (min-width:480px) { 
+    .save-update-button {
+        float: right;
+        font-size: 1em;
+        font-weight: 400;
+        color: white;
+        background-color: #5cb852;
+        width: 10%;
+        border-radius: 2px;
+        border: none;
+    }
+}
+
+@media (max-width:480px) { 
+    .save-update-button {
+        float: right;
+        font-size: 1em;
+        font-weight: 400;
+        color: white;
+        background-color: #5cb852;
+        border-radius: 2px;
+        border: none;
+    }
 }
 
 /* font awesome custom css */
