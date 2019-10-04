@@ -3,6 +3,10 @@ const path = require('path');
 module.exports = {
   context: path.join(__dirname, '/src'),
 
+  devtool: 'source-map',
+
+  watch: true,
+  
   entry: {
     javascript: './index'
   },
@@ -30,6 +34,23 @@ module.exports = {
         test: /\.html$/,
         loader: 'file?name=[name].[ext]',
       },
+      { 
+        test: /\.css$/,
+        use: ['style-loader','css-loader']
+      },
+      {
+        test: /.(ttf|otf|eot|svg|woff(2)?)(\?[a-z0-9]+)?$/,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: 'fonts/'
+
+            }
+          },
+        ]
+      }
     ],
   },
 };

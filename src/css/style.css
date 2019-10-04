@@ -1,0 +1,470 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.white-font {
+    color: white; 
+
+}
+
+body {
+    background: #136a8a;
+    background: -webkit-linear-gradient(to left, #b3e6eb, #6281c9);
+    background: linear-gradient(to left, #b3e6eb, #6281c9);
+}
+
+/* grid container */
+@media (min-width:480px) { 
+    .grid-container {
+        display: grid;
+        width : 95%;
+        max-width : 1400px; 
+        margin: 2.5%;
+    }
+}
+
+@media (max-width:480px) { 
+    .grid-container {
+        display: grid;
+        width : 95%;
+        margin: 2.5%;
+    }
+}
+
+/* row */
+@media (min-width:480px) { 
+    .row {
+        clear: both;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+@media (max-width:480px) { 
+    .row {
+        clear: both;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+/* app header */
+@media (min-width:480px) { 
+    .app-header {
+        font-weight: bold;
+        font-size: 3em;
+        margin: 0px;
+    }
+}
+
+@media (max-width:480px) { 
+    .app-header {
+        font-weight: bold;
+        font-size: 4.2vh;
+        margin: 10px 0px 10px 0px;
+        text-align: center;
+    }
+}
+
+/* app description */
+@media (min-width:480px) { 
+    .app-description {
+        font-size: 1.6em;
+    }
+}
+
+@media (max-width:480px) { 
+    .app-description {
+        font-size: 3vh;
+        margin: auto; 
+        text-align: center;
+    }
+}
+
+/* line */
+@media (min-width:480px) { 
+    .line {
+        background-color: #ffffff;
+        padding: 0.5px;
+        margin: 20px 0px 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 99.9%;
+    }
+}
+
+@media (max-width:480px) { 
+    .line {
+        background-color: #ffffff;
+        padding: 0.5px;
+        margin: 10px 0px 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 99%;
+    }
+}
+
+/* cards */
+@media (min-width:480px) { 
+    .cards {
+        display: grid;    
+        grid-template-columns: 1fr 2fr;    
+        grid-gap: 2.5rem;
+        width: 100%;
+        padding-left: 0% !important;
+    }
+}
+
+@media (max-width:480px) { 
+    .cards {
+        display: grid;    
+        grid-template-columns: 1fr;
+        grid-gap: 2.5rem;
+        width: 100%;
+        margin: 3% auto 3% auto;
+    }
+}
+ 
+/* card */
+@media (min-width:480px) { 
+    .card {
+        display: grid;
+        grid-auto-rows: 60px 4fr 1.2fr;    
+        border-radius: 6px;
+        overflow: hidden;
+    }
+}
+
+@media (max-width:480px) { 
+    .card {
+        display: grid;
+        grid-auto-rows: 45px 4fr 1.2fr;    
+        border-radius: 6px;
+        overflow: hidden;
+    }
+}
+
+/* add new todo */
+@media (min-width:480px) { 
+    .add-new-todo {
+        grid-column: 1 / 2;
+        min-height: 60%;
+    }
+}
+
+/* view todo */
+@media (min-width:480px) { 
+    .view-todo {
+        grid-column: 2 / 3;
+    }
+}
+
+/* card header */
+@media (min-width:480px) { 
+    .card-header {
+        padding-left: 4.5%;
+        font-size: 1.3rem;
+        grid-row: 1 / 2;
+        background-color: #f5f5f5;
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #66646415;
+    }
+}
+
+@media (max-width:480px) { 
+    .card-header {
+        font-size: 1.3rem;
+        grid-row: 1 / 2;
+        background-color: #f5f5f5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #66646415;
+    }
+}
+
+/* card body */
+.card-body {
+    grid-row: 2 / 3;
+    background-color: #ffffff;
+}
+
+/* card body edit */
+.card-body-edit {
+    grid-row: 2 / 3;
+    background: transparent;
+}
+
+/* card footer */
+.card-footer {
+    grid-row: 3 / 4;
+    background-color: #f5f5f5;
+    border-top: 1px solid #66646415;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* label */
+@media (min-width:480px) { 
+    label {
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: bold;
+        padding-left: 6.5%;
+    }
+}
+
+@media (max-width:480px) { 
+    label {
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: bold;
+        padding-left: 6.5%;
+    }
+}
+
+/* textarea */
+@media (min-width:480px) { 
+    .new-todo-text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 86%;
+        max-width: 100%;
+        min-height: 8em;
+        max-height: 16em;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:480px) { 
+    .new-todo-text {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 86%;
+        max-width: 100%;
+        min-height: 8em;
+        max-height: 16em;
+        border-radius: 5px;
+    }
+}
+
+/* select */
+@media (min-width:480px) { 
+    select {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 88%;
+        max-width: 100%;
+        min-height: 2.5em;
+        max-height: 3em;
+        border-radius: 5px;
+    }
+}
+
+@media (max-width:480px) { 
+    select {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 88%;
+        max-width: 100%;
+        min-height: 2.5em;
+        max-height: 3em;
+        border-radius: 5px;
+    }
+}
+
+/* select-row */
+@media (min-width:480px) { 
+    .select-row {
+        clear: both;
+        margin: 10px 0px 35px 0px;
+    }
+}
+
+@media (max-width:480px) { 
+    .select-row {
+        clear: both;
+        margin: 10px 0px 35px 0px;
+    }
+}
+
+/* table */
+table
+{
+    /* need these border styles so that I can apply border radius styling 
+    below to the td children */
+    border-spacing: 0;
+    border-collapse: collapse;
+    border-style: hidden;  
+    width:100%;
+    table-layout: fixed;
+}
+
+/* setting widths of table data cells for the todo items */
+.todo-item-row td:nth-child(1),
+.todo-item-row td:nth-child(3),
+.todo-item-row td:nth-child(4) {
+  width: 6%;
+}
+.todo-item-row td:nth-child(2) {
+  width: 82%;
+} 
+
+/* .edit-todo-row td:nth-child(1) {
+    width: 100%;
+} */
+
+/* todo table tr/td children for bottom border radius*/
+.todo-table tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+.todo-table tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+} 
+
+/* todo item row */
+@media (min-width:480px) { 
+    .todo-item-row {
+        background-color: #FBF8E2;
+        height: 3em;
+        border-bottom: 0.5px solid rgb(218, 218, 218);
+    }
+}
+
+@media (max-width:480px) { 
+    .todo-item-row {
+        background-color: #FBF8E2;
+        height: 3em;
+        border-bottom: 0.5px solid rgb(218, 218, 218);
+    }
+}
+
+/* input type text */
+/* input[type=checkbox] {
+    width: 100%;
+} */
+
+/* table checkbox */
+/* @media (min-width:480px) { 
+    .table-checkbox {
+        width: 45px;
+    }
+}
+
+@media (max-width:480px) { 
+    .table-checkbox {
+        width: 3em;
+    }
+} */
+
+/* todo description */
+@media (min-width:480px) { 
+    .todo-description {
+        font-weight: bold;
+        color: #936e36;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+@media (max-width:480px) { 
+    .todo-description {
+        font-weight: bold;
+        color: #936e36;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+/* edit todo icon */
+/* @media (min-width:480px) { 
+    .edit-todo-icon {
+        width: 2em;
+    }
+}
+
+@media (max-width:480px) { 
+    .edit-todo-icon {
+        width: 1.7em;
+    }
+} */
+
+/* delete-todo */
+/* @media (min-width:480px) { 
+    .delete-todo {
+        width: 2em;
+    }
+}
+
+@media (max-width:480px) { 
+    .delete-todo {
+        width: 1.7em;
+    }
+} */
+
+/* edit todo row */
+/* @media (min-width:480px) { 
+    .edit-todo-row {
+        border-bottom: 5px solid rgb(218, 218, 218);
+    }
+}
+
+@media (max-width:480px) { 
+    .edit-todo-row {
+        border-bottom: 0.5px solid rgb(218, 218, 218);
+    }
+} */
+
+.edit-table {
+    /* background-color: #FBF8E2; */
+    border-bottom: 0.5px solid rgb(218, 218, 218);
+}
+
+/* edit todo data */
+@media (min-width:480px) { 
+    .edit-todo-data {
+        background-color: #FBF8E2;
+        /* border-bottom: 0.5px solid rgb(218, 218, 218); */
+    }
+}
+
+@media (max-width:480px) { 
+    .edit-todo-data {
+        background-color: #FBF8E2;
+        /* border-bottom: 0.5px solid rgb(218, 218, 218); */
+    }
+}
+
+
+/* add button */
+.add-button {
+    font-size: 1.5em;
+    font-weight: 550;
+    color: white;
+    background-color: #5cb852;
+    width: 88%;
+    height: 72%;
+    border-radius: 8px;
+    border: none;
+}
+
+/* font awesome custom css */
+.fa-trash {
+    color: #a64741;
+}
+
+.fa-edit {
+    color: #487A98;
+}
