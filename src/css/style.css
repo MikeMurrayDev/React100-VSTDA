@@ -4,7 +4,6 @@
 
 .white-font {
     color: white; 
-
 }
 
 body {
@@ -148,7 +147,7 @@ body {
 @media (min-width:480px) { 
     .add-new-todo {
         grid-column: 1 / 2;
-        max-height: 85%;
+        max-height: 100%;
     }
 }
 
@@ -381,7 +380,7 @@ table
 
 /* edit table */
 .edit-table {
-    /* background-color: #FBF8E2; */
+    width: 100%;
     border-bottom: 0.5px solid rgb(218, 218, 218);
 }
 
@@ -401,6 +400,8 @@ table
 /* edit todo data */
 @media (min-width:480px) { 
     .edit-todo-data {
+        display: inline-block;
+        width: 100%;
         background-color: #FBF8E2;
         border-radius: 0px 0px 5px 5px;
     }
@@ -408,6 +409,8 @@ table
 
 @media (max-width:480px) { 
     .edit-todo-data {
+        display: inline-block;
+        width: 100%;
         background-color: #FBF8E2;
         border-radius: 0px 0px 5px 5px;
     }
